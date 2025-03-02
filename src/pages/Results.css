@@ -1,0 +1,42 @@
+.career-suggestions {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e3f2fd;
+    border-radius: 10px;
+  }
+  
+  .career-suggestions h3 {
+    color: #007bff;
+  }
+  
+  .career-suggestions ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .career-suggestions li {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .history {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f0f0;
+    border-radius: 10px;
+  }
+  
+  .history h3 {
+    color: #333;
+  }
+  
+  .history ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .history li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
