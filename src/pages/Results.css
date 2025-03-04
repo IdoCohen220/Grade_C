@@ -1,28 +1,43 @@
-.career-suggestions {
-    margin-top: 20px;
-    padding: 15px;
-    background: #e3f2fd;
+.results-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .results-card {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .grade {
+    font-size: 30px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .letter-grade {
+    font-size: 24px;
+    color: green;
+  }
+  
+  .career-suggestions {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
   }
   
   .career-suggestions h3 {
     color: #007bff;
   }
   
-  .career-suggestions ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .career-suggestions li {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
   .history {
-    margin-top: 20px;
-    padding: 15px;
     background: #f0f0f0;
+    padding: 15px;
     border-radius: 10px;
   }
   
@@ -30,13 +45,22 @@
     color: #333;
   }
   
-  .history ul {
-    list-style: none;
-    padding: 0;
+  .recalculate-button,
+  .home-button {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
   }
   
-  .history li {
-    font-size: 16px;
-    margin-bottom: 5px;
+  .recalculate-button:hover,
+  .home-button:hover {
+    background: #0056b3;
   }
+  
   

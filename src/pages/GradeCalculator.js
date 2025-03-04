@@ -24,24 +24,23 @@ function GradeCalculator() {
     else if (average >= 70) letterGrade = "C";
     else if (average >= 60) letterGrade = "D";
 
-    // ✅ Retrieve previous results from localStorage
+    // ✅ Retrieve previous results
     const previousResults = JSON.parse(localStorage.getItem("gradeHistory")) || [];
-    
-    // ✅ Add the new result to the history
-    const newResult = { name, average, letterGrade, date: new Date().toLocaleString() };
-    const updatedResults = [newResult, ...previousResults]; // Keep latest at top
 
-    // ✅ Save updated results
+    // ✅ Add new result to the history
+    const newResult = { name, average, letterGrade, date: new Date().toLocaleString() };
+    const updatedResults = [newResult, ...previousResults];
+
+    // ✅ Save results
     localStorage.setItem("gradeHistory", JSON.stringify(updatedResults));
 
-    // ✅ Navigate to results page
+    // ✅ Navigate to results
     navigate("/results");
   };
 
   return (
     <div className="calculator-container">
       <h1>📊 Grade Calculator</h1>
-
       {error && <p className="error-message">{error}</p>}
 
       <input type="text" placeholder="Enter Student Name" value={name} onChange={(e) => setName(e.target.value)} />

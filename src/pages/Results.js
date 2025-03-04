@@ -6,7 +6,7 @@ function Results() {
   const navigate = useNavigate();
   const [gradeHistory, setGradeHistory] = useState([]);
 
-  // ✅ Load grade history from localStorage
+  // ✅ Load history
   useEffect(() => {
     const savedData = JSON.parse(localStorage.getItem("gradeHistory")) || [];
     setGradeHistory(savedData);
@@ -16,15 +16,15 @@ function Results() {
   const getCareerSuggestions = (letterGrade) => {
     switch (letterGrade) {
       case "A":
-        return ["Software Engineer", "Data Scientist", "Doctor", "Research Scientist"];
+        return ["Software Engineer", "Doctor", "Data Scientist", "Pilot"];
       case "B":
-        return ["Marketing Manager", "Mechanical Engineer", "Business Analyst", "Project Manager"];
+        return ["Business Analyst", "Marketing Manager", "Mechanical Engineer"];
       case "C":
-        return ["Graphic Designer", "Technician", "Sales Representative", "Customer Support"];
+        return ["Graphic Designer", "Technician", "Sales Representative"];
       case "D":
-        return ["Warehouse Manager", "Retail Associate", "Security Officer", "Delivery Driver"];
+        return ["Security Officer", "Delivery Driver", "Retail Associate"];
       case "F":
-        return ["Apprenticeship in Skilled Trades", "Entry-Level Assistant", "Freelancer"];
+        return ["Entry-Level Assistant", "Warehouse Worker", "Freelancer"];
       default:
         return [];
     }
